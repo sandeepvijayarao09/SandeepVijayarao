@@ -1,0 +1,107 @@
+/* Education Page - Bento Grid Layout */
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.edu-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    /* Ensure consistent height */
+    position: relative;
+    overflow: hidden;
+}
+
+.edu-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.edu-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.edu-school {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-xs);
+}
+
+.edu-degree {
+    font-size: 19px;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.edu-specialization {
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+    display: block;
+}
+
+.edu-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.course-pill {
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    /* Light mode pill */
+    color: var(--text-secondary);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+[data-theme='dark'] .course-pill {
+    background: rgba(255, 255, 255, 0.1);
+    /* Dark mode pill */
+    color: var(--text-primary);
+}
+
+.edu-meta {
+    margin-top: auto;
+    /* Push to bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--spacing-md);
+}
+
+.edu-year {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.edu-location {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .education-list {
+        grid-template-columns: 1fr;
+    }
+}

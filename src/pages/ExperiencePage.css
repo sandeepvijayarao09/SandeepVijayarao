@@ -1,0 +1,61 @@
+/* Timeline Styles */
+.timeline-container {
+    position: relative;
+    border-left: 2px solid var(--divider-color);
+    margin-left: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -49px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--bg-color);
+    border: 3px solid var(--accent-blue);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+/* Tech Pill Styles */
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-pill {
+    background: var(--bg-section-alt);
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    cursor: default;
+    border: 1px solid transparent;
+}
+
+.tech-pill:hover {
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border-color: var(--divider-color);
+    transform: translateY(-1px);
+}

@@ -1,0 +1,273 @@
+:root {
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Apple Color Palette - Light Mode (Default) */
+  --bg-color: #F5F5F7;
+  /* Apple Light Gray Background */
+  --bg-card: #FFFFFF;
+  --bg-section-alt: #FFFFFF;
+  /* Alternating sections usually white on gray */
+
+  --text-primary: #1D1D1F;
+  /* Apple Near Black */
+  --text-secondary: #86868B;
+  --text-tertiary: #6E6E73;
+
+  --accent-blue: #0066CC;
+  /* Apple Link Blue */
+  --accent-blue-hover: #004499;
+
+  --border-color: #D2D2D7;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  /* Soft drop shadow */
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  --radius-sm: 8px;
+  --radius-md: 18px;
+  /* App icon curvature approx */
+  --radius-lg: 24px;
+  /* Card curvature */
+  --radius-xl: 40px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 80px;
+
+  --header-height: 60px;
+  /* More compact header */
+}
+
+/* Dark Mode - Applied via data-theme attribute */
+[data-theme='dark'] {
+  --bg-color: #000000;
+  --bg-card: #1C1C1E;
+  --bg-section-alt: #121212;
+
+  --text-primary: #F5F5F7;
+  --text-secondary: #A1A1A6;
+  --text-tertiary: #86868B;
+
+  --accent-blue: #2997FF;
+  /* Lighter blue for dark mode */
+  --accent-blue-hover: #007AFF;
+
+  --border-color: #38383A;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Also support system preference if no theme is set (optional fallback) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg-color: #000000;
+    --bg-card: #1C1C1E;
+    --bg-section-alt: #121212;
+
+    --text-primary: #F5F5F7;
+    --text-secondary: #A1A1A6;
+    --text-tertiary: #86868B;
+
+    --accent-blue: #2997FF;
+    --accent-blue-hover: #007AFF;
+
+    --border-color: #38383A;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-display, var(--font-family-base));
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.08349;
+  letter-spacing: -0.003em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em;
+  font-size: 19px;
+  /* Apple's body size is often larger */
+  line-height: 1.4211;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-blue-hover);
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 24px;
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 980px;
+  /* Pill shape */
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+button:hover {
+  background-color: var(--accent-blue-hover);
+  transform: scale(1.02);
+}
+
+/* Utilities */
+.container {
+  max-width: 1280px;
+  /* Increased from 1080px for better desktop scaling */
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 40px);
+  /* Responsive padding */
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: var(--spacing-xl) 0;
+  opacity: 0.6;
+}
+
+.typography-caption {
+  font-size: 14px;
+  line-height: 1.33337;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-tertiary);
+}
+
+/* Global Resets & Utilities from global.css */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Typography Classes from typography.css */
+.typography-hero {
+  font-size: 48px;
+  line-height: 1.07143;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  margin-bottom: var(--spacing-md);
+}
+
+.typography-section-headline {
+  font-size: 36px;
+  line-height: 1.08349;
+  font-weight: 700;
+  letter-spacing: -0.003em;
+  margin-bottom: var(--spacing-xl);
+}
+
+.typography-headline {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+.typography-title {
+  font-size: 20px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+
+.typography-body {
+  font-size: 15px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+@media (max-width: 768px) {
+  .typography-hero {
+    font-size: 40px;
+  }
+
+  .typography-section-headline {
+    font-size: 32px;
+  }
+}
+
+/* Scrollbar Styles from global.css */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
