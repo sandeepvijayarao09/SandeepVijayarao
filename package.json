@@ -1,6 +1,7 @@
 {
   "name": "sandeep-vijayarao-portfolio",
   "private": true,
+  "homepage": "https://sandeepvijayarao09.github.io/SandeepVijayarao",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
