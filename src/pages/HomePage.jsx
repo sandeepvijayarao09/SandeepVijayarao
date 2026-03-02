@@ -49,7 +49,7 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src="/profile.jpg"
+                            src="./profile.jpg"
                             alt="Sandeep Vijayarao"
                             className="hero-image"
                         />
