@@ -49,8 +49,8 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <img
-                            src="https://placehold.co/500x500/1d1d1f/ffffff?text=SV"
-                            alt="Sai Sandeep Kumar Vijayarao"
+                            src="/profile.jpg"
+                            alt="Sandeep Vijayarao"
                             className="hero-image"
                         />
                     </motion.div>
