@@ -6,11 +6,11 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-links">
-                    <a href="#" className="footer-link">LinkedIn</a>
-                    <a href="#" className="footer-link">GitHub</a>
-                    <a href="#" className="footer-link">Twitter</a>
+                    <a href="https://www.linkedin.com/in/sandeepvijayarao/" target="_blank" rel="noopener noreferrer" className="footer-link">LinkedIn</a>
+                    <a href="https://github.com/sandeepvijayarao" target="_blank" rel="noopener noreferrer" className="footer-link">GitHub</a>
+                    <a href="mailto:sandeepvijayarao07@gmail.com" className="footer-link">Email</a>
                 </div>
-                <p>Copyright © {new Date().getFullYear()} Your Name. All rights reserved.</p>
+                <p>Copyright © {new Date().getFullYear()} Sandeep Vijayarao. All rights reserved.</p>
             </div>
         </footer>
     );

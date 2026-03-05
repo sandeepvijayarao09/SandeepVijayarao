@@ -16,9 +16,9 @@ const Contact = () => {
 
         try {
             // Using FormSubmit.co with your email directly.
-            // On the FIRST submission, you will receive an activation email at sandeepvijayarao09@gmail.com.
+            // On the FIRST submission, you will receive an activation email at sandeepvijayarao07@gmail.com.
             // You MUST click "Activate" in that email for this to work permanently.
-            const response = await fetch("https://formsubmit.co/ajax/sandeepvijayarao09@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/sandeepvijayarao07@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const Contact = () => {
             </p>
 
             <div style={{ maxWidth: '600px', margin: '0 auto var(--spacing-xl)', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <a href="mailto:sandeepvijayarao09@gmail.com" className="typography-body" style={{ color: 'var(--accent-blue)' }}>sandeepvijayarao09@gmail.com</a>
+                <a href="mailto:sandeepvijayarao07@gmail.com" className="typography-body" style={{ color: 'var(--accent-blue)' }}>sandeepvijayarao07@gmail.com</a>
                 <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginTop: '10px' }}>
                     <a href="https://calendar.app.google/AL3bEPnaT7X5bPkP9" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>Book a Meeting ›</a>
                     <a href="https://github.com/sandeepvijayarao" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>GitHub Profile ›</a>

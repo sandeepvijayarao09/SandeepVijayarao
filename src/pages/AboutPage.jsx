@@ -48,8 +48,25 @@ const About = () => {
                     <p className="about-intro" style={{ fontSize: '24px', lineHeight: '1.5', textAlign: 'center', maxWidth: '900px', margin: '0 auto 60px' }}>
                         "Principled Architect of Intelligent Futures"
                     </p>
+
+                    <p className="about-text" style={{ marginBottom: '20px' }}>
+                        We got our first computer when I was five—interacting with it was engaging and fascinating. However, it was the iPhone 4s I first used in 2012 that truly sparked my deep interest in technology. From that moment, my perspective on tech changed completely. Inspired by Apple's product innovation, I've always wanted to build products on that level. My long-term goal is to start a consumer technology company with scale, consistency, and a significant contribution to the industry.
+                    </p>
+
+                    <p className="about-text" style={{ marginBottom: '20px' }}>
+                        I attended a school that emphasized corporate values, soft skills, and leadership, preparing us for future business leadership. Advanced mathematics and science classes established a strong foundation that makes complex equations and calculations in computer science effortless. My achievements in school include reaching the 3rd stage at the International Maths Olympiad and National Science Olympiad multiple times, consistently ranking in the top 5, and being elected as <strong>Head Boy</strong> by the students. Through this role, I led teams towards greater purpose and integrated leadership skills into life. Admiration for programming led me to dedicate my school summer vacations to mastering C/C++ and Java.
+                    </p>
+
+                    <p className="about-text" style={{ marginBottom: '20px' }}>
+                        I pursued my undergraduate in Computer Science and Engineering at <strong>RMK Engineering College, Chennai</strong>. Beyond my coursework, I used platforms like edX, Coursera, and attended developer community sessions from Google, Apple, Microsoft, and Qualcomm. I built projects from the ground up—including a Hospital Management System for a local hospital and a Low-Code/No-Code Development Platform leveraging ChatGPT and Codex. That project awakened me to the larger potential for AI applications and solidified my direction.
+                    </p>
+
+                    <p className="about-text" style={{ marginBottom: '20px' }}>
+                        Active participation in technical societies like IEEE, CSI, and CTSOC enriched my professional network and introduced me to global R&D opportunities. As a Prime member of IEEE-IAYPC, I was paired with an industry mentor through the Student Mentorship Program, who reviews my work and challenges me with real-world problems. I've completed internships in Android App Development, AI-ML, and DevOps—including at Infosys, which exposed me to industry-standard tools and workflows.
+                    </p>
+
                     <p className="about-text">
-                        I am a Computer Science graduate student at Northeastern University and an AI engineer with a background in building real-time systems (IEEE AISP 2024). Formerly at Trominosoft and Infosys, I now focus on <strong>'Zero to One'</strong> product development, combining deep technical expertise in LLMs and NLP with a founder's discipline.
+                        My vision is to integrate AI into computer systems to achieve the "Personal Assistant" goal—an <strong>Intelligent Second Brain</strong> containing all the information we process, capable of accessing and working with data on-device. To realize this, I pursued my <strong>Master of Science in Computer Science</strong> from the Khoury College of Computer Sciences at <strong>Northeastern University</strong>, currently studying in San Francisco. I am committed to leveraging every opportunity to gain the expertise necessary to build a large-scale consumer technology company.
                     </p>
                 </motion.div>
 

@@ -113,7 +113,7 @@ export const press = [];
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/sandeepvijayarao",
   github: "https://github.com/sandeepvijayarao",
-  email: "mailto:sandeepvijayarao09@gmail.com",
+  email: "mailto:sandeepvijayarao07@gmail.com",
   phone: "tel:+14082106329"
 };
 
@@ -122,6 +122,6 @@ export const now = {
   currentProject: "Neural Studio",
   reading: "Zero to One by Peter Thiel",
   academics: "Master of Computer Science, Northeastern University",
-  location: "San Jose, CA | Silicon Valley",
-  updated: "Jan 2026"
+  location: "San Francisco, CA",
+  updated: "Mar 2026"
 };

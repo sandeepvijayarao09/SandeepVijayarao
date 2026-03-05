@@ -40,20 +40,6 @@ const Home = () => {
                             I bridge the gap between stochastic models and business models—transforming raw code into scalable, revenue-generating AI products.
                         </p>
                     </motion.div>
-
-                    {/* New Image Section */}
-                    <motion.div
-                        className="hero-image-container"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <img
-                            src="./profile.jpg"
-                            alt="Sandeep Vijayarao"
-                            className="hero-image"
-                        />
-                    </motion.div>
                 </div>
             </section>
 
