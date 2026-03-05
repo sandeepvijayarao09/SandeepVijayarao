@@ -6,7 +6,6 @@ import InspirationCard from '../components/common/InspirationCard';
 import './AboutPage.css';
 
 const About = () => {
-    // Animation variants
     const fadeInUp = {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -34,7 +33,7 @@ const About = () => {
                 animate="visible"
                 variants={fadeInUp}
             >
-                My Journey
+                The Journey
             </motion.h1>
 
             <motion.div
@@ -43,30 +42,30 @@ const About = () => {
                 animate="visible"
                 variants={staggerContainer}
             >
-                {/* 1. Bio Narrative */}
+                {/* 1. Visionary Narrative */}
                 <motion.div className="about-block" variants={sectionVariant}>
-                    <p className="about-intro" style={{ fontSize: '24px', lineHeight: '1.5', textAlign: 'center', maxWidth: '900px', margin: '0 auto 60px' }}>
-                        "Principled Architect of Intelligent Futures"
+                    <p className="about-intro" style={{ fontSize: '28px', lineHeight: '1.5', textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px', fontWeight: '600' }}>
+                        "I believe every person on this planet deserves technology that thinks with them, not for them."
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        We got our first computer when I was five—interacting with it was engaging and fascinating. However, it was the iPhone 4s I first used in 2012 that truly sparked my deep interest in technology. From that moment, my perspective on tech changed completely. Inspired by Apple's product innovation, I've always wanted to build products on that level. My long-term goal is to start a consumer technology company with scale, consistency, and a significant contribution to the industry.
+                        It started with a single device. In 2012, I used an iPhone 4s for the first time — and from that moment, everything changed. I wasn't just fascinated by technology; I was consumed by the question of what it could become. The elegance of Apple's vision — a product so intuitive it disappears — became my north star.
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        I attended a school that emphasized corporate values, soft skills, and leadership, preparing us for future business leadership. Advanced mathematics and science classes established a strong foundation that makes complex equations and calculations in computer science effortless. My achievements in school include reaching the 3rd stage at the International Maths Olympiad and National Science Olympiad multiple times, consistently ranking in the top 5, and being elected as <strong>Head Boy</strong> by the students. Through this role, I led teams towards greater purpose and integrated leadership skills into life. Admiration for programming led me to dedicate my school summer vacations to mastering C/C++ and Java.
+                        That obsession drove every decision since. I taught myself to code during school vacations. I competed in international olympiads. I led as Head Boy. But these weren't checklist items — they were expressions of a deeper conviction: that technology, when built with intention, transforms lives.
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        I pursued my undergraduate in Computer Science and Engineering at <strong>RMK Engineering College, Chennai</strong>. Beyond my coursework, I used platforms like edX, Coursera, and attended developer community sessions from Google, Apple, Microsoft, and Qualcomm. I built projects from the ground up—including a Hospital Management System for a local hospital and a Low-Code/No-Code Development Platform leveraging ChatGPT and Codex. That project awakened me to the larger potential for AI applications and solidified my direction.
+                        Through my undergraduate in Computer Science, I didn't just study — I built. A Hospital Management System for a real hospital. A Low-Code platform that evolved into an AI-powered development tool. Each project sharpened the same question: how do we make technology truly personal?
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        Active participation in technical societies like IEEE, CSI, and CTSOC enriched my professional network and introduced me to global R&D opportunities. As a Prime member of IEEE-IAYPC, I was paired with an industry mentor through the Student Mentorship Program, who reviews my work and challenges me with real-world problems. I've completed internships in Android App Development, AI-ML, and DevOps—including at Infosys, which exposed me to industry-standard tools and workflows.
+                        That question became my thesis. Internships at companies like Infosys and Trominosoft taught me how the industry operates. Research published at IEEE taught me where the frontier lies. Active participation in global technical communities showed me the scale of what's possible.
                     </p>
 
                     <p className="about-text">
-                        My vision is to integrate AI into computer systems to achieve the "Personal Assistant" goal—an <strong>Intelligent Second Brain</strong> containing all the information we process, capable of accessing and working with data on-device. To realize this, I pursued my <strong>Master of Science in Computer Science</strong> from the Khoury College of Computer Sciences at <strong>Northeastern University</strong>, currently studying in San Francisco. I am committed to leveraging every opportunity to gain the expertise necessary to build a large-scale consumer technology company.
+                        Now, at Northeastern University in San Francisco, I'm building toward the answer: the <strong>Intelligent Second Brain</strong> — an AI that lives on your device, remembers everything you've learned, and surfaces knowledge exactly when you need it. Not a chatbot. Not an assistant. A second mind. This is the product. This is the company. This is my life's work.
                     </p>
                 </motion.div>
 
@@ -76,22 +75,22 @@ const About = () => {
                     <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Foundation</p>
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Core Values</h2>
                     <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
-                        <ValueCard title="Integrity" description="&quot;Code doesn't lie. I build transparent, honest systems.&quot;" />
-                        <ValueCard title="Commitment" description="&quot;Unwavering dedication to solving the problem, no matter the difficulty.&quot;" />
-                        <ValueCard title="Honesty" description="&quot;Truth in engineering and business practices.&quot;" />
-                        <ValueCard title="Focus" description="&quot;Deep work and signal over noise.&quot;" />
+                        <ValueCard title="Integrity" description="&quot;Build things that are honest. No shortcuts, no illusions.&quot;" />
+                        <ValueCard title="Conviction" description="&quot;Have the courage to pursue what you believe in, even when others don't see it yet.&quot;" />
+                        <ValueCard title="Craft" description="&quot;Every detail matters. The product is the strategy.&quot;" />
+                        <ValueCard title="Focus" description="&quot;Say no to a thousand things to say yes to the one that matters.&quot;" />
                     </div>
                 </motion.div>
 
                 {/* 3. Guiding Principles */}
                 <Divider style={{ margin: '60px 0' }} />
                 <motion.div className="about-block" variants={sectionVariant}>
-                    <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Logic</p>
-                    <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Guiding Principles</h2>
+                    <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Philosophy</p>
+                    <h2 className="typography-headline" style={{ marginBottom: '30px' }}>How I Think</h2>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Product First:</strong> "Technology must serve a human purpose."</li>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Result Based:</strong> "Measured by shipped products, not just effort."</li>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Business Oriented:</strong> "Building for economic viability and scale."</li>
+                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Start with the human:</strong> "Technology exists to serve people, not the other way around."</li>
+                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Ship, don't theorize:</strong> "Ideas are worthless until they're in someone's hands."</li>
+                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Think in decades:</strong> "Build for where the world is going, not where it is."</li>
                     </ul>
                 </motion.div>
 
@@ -101,9 +100,9 @@ const About = () => {
                     <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Fuel</p>
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Inspirations</h2>
                     <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '30px' }}>
-                        <InspirationCard name="Steve Jobs" description="Fusion of Art & Technology." />
-                        <InspirationCard name="Virat Kohli" description="Relentless consistency and discipline." />
-                        <InspirationCard name="Pawan Kalyan" description="Servant leadership and integrity." />
+                        <InspirationCard name="Steve Jobs" description="The intersection of technology and liberal arts." />
+                        <InspirationCard name="Virat Kohli" description="Relentless pursuit of excellence under pressure." />
+                        <InspirationCard name="Pawan Kalyan" description="Servant leadership and principled conviction." />
                     </div>
                 </motion.div>
 
@@ -113,12 +112,12 @@ const About = () => {
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Discipline</h2>
                     <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
                         <div style={{ flex: 1 }}>
-                            <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Financial</h3>
-                            <p style={{ color: 'var(--text-secondary)' }}>Lean operations; high ROI focus.</p>
+                            <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Physical</h3>
+                            <p style={{ color: 'var(--text-secondary)' }}>Peak performance demands peak health. No compromises.</p>
                         </div>
                         <div style={{ flex: 1 }}>
-                            <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Lifestyle</h3>
-                            <p style={{ color: 'var(--text-secondary)' }}>Physical and mental rigor for long-term performance.</p>
+                            <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Mental</h3>
+                            <p style={{ color: 'var(--text-secondary)' }}>Clarity of thought. Deep focus. Long-term thinking over short-term noise.</p>
                         </div>
                     </div>
                 </motion.div>

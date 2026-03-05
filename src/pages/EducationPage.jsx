@@ -22,14 +22,6 @@ const Education = () => {
                                     {edu.courses.length > 6 && <span className="course-pill">+{edu.courses.length - 6} more</span>}
                                 </div>
                             )}
-
-                            {edu.achievements && (
-                                <div className="edu-courses" style={{ marginTop: edu.courses ? '0' : '0' }}>
-                                    {edu.achievements.map((achievement, index) => (
-                                        <span key={index} className="course-pill" style={{ background: 'rgba(0, 122, 255, 0.1)', color: 'var(--accent-blue)' }}>🏆 {achievement}</span>
-                                    ))}
-                                </div>
-                            )}
                         </div>
                         <div className="edu-meta">
                             <span className="edu-year">{edu.year}</span>

@@ -105,24 +105,6 @@ export const education = [
       "Data Analytics",
       "Probability & Statistics"
     ]
-  },
-  {
-    id: 3,
-    degree: "Intermediate / Junior College",
-    school: "Narayana Junior College, Narsimhakonda, Nellore, India",
-    year: "2019 - 2021"
-  },
-  {
-    id: 4,
-    degree: "Schooling",
-    school: "Narayana Olympiad School, Nellore, India",
-    year: "2009 - 2019",
-    achievements: [
-      "Elected Head Boy by the students",
-      "3rd Stage — International Maths Olympiad (multiple times)",
-      "3rd Stage — National Science Olympiad (multiple times)",
-      "Consistently in Top 5 students in class"
-    ]
   }
 ];
 
