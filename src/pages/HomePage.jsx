@@ -37,7 +37,7 @@ const Home = () => {
                             Architecting the Future.
                         </h1>
                         <p className="hero-statement">
-                            I bridge the gap between stochastic models and business models—transforming raw code into scalable, revenue-generating AI products.
+                            From the moment I held an iPhone 4s in 2012, I knew I wanted to build products that change how people experience technology. I'm on a mission to create an AI-powered Intelligent Second Brain—and ultimately, a consumer technology company that makes a lasting impact.
                         </p>
                     </motion.div>
                 </div>
@@ -47,8 +47,8 @@ const Home = () => {
             <section className="status-ticker">
                 <div className="container ticker-content">
                     <div>
-                        <span className="ticker-label">Focus:</span>
-                        Building Agentic AI & Universal Enterprise Infrastructure
+                        <span className="ticker-label">Interests:</span>
+                        Computer Science, AI & Business
                     </div>
                     <div>
                         <span className="ticker-label">Academics:</span>
@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                     <div>
                         <span className="ticker-label">Status:</span>
-                        Pre-Seed / Stealth Development
+                        Graduate Student & Aspiring Entrepreneur
                     </div>
                 </div>
             </section>
@@ -65,7 +65,7 @@ const Home = () => {
                 <Divider />
             </div>
 
-            {/* Section 2: The Foundation */}
+            {/* Section 2: Where It Started */}
             <section className="narrative-section" style={{ backgroundColor: 'var(--bg-section-alt)', textAlign: 'center' }}>
                 <motion.div
                     className="container"
@@ -74,20 +74,20 @@ const Home = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={fadeInUp}
                 >
-                    <p className="typography-caption" style={{ marginBottom: '16px', textTransform: 'uppercase' }}>The Foundation</p>
-                    <h2 className="narrative-headline">Rooted in Discipline.</h2>
+                    <p className="typography-caption" style={{ marginBottom: '16px', textTransform: 'uppercase' }}>Where It Started</p>
+                    <h2 className="narrative-headline">A Spark That Changed Everything.</h2>
                     <p className="narrative-text">
-                        Coming from a family background that blended business acumen with professional service, I internalized financial prudence and lifestyle discipline early on.
+                        We got our first computer when I was five. But it was the iPhone 4s in 2012 that truly ignited my passion for technology and inspired me to build products on the level of Apple.
                     </p>
 
                     <motion.div className="narrative-grid" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <motion.div className="narrative-card" variants={fadeInUp}>
-                            <div className="narrative-card-title">Business Acumen</div>
-                            <p className="narrative-card-text">Understanding the market is just as important as building the code. My background ensures every line of code serves a business purpose.</p>
+                            <div className="narrative-card-title">Early Tech Spark</div>
+                            <p className="narrative-card-text">First computer at age 5, iPhone 4s at age 9. From that moment, my perspective on technology changed completely. I dedicated school summers to mastering C/C++ and Java.</p>
                         </motion.div>
                         <motion.div className="narrative-card" variants={fadeInUp}>
-                            <div className="narrative-card-title">Financial Discipline</div>
-                            <p className="narrative-card-text">Efficiency isn't just an algorithm; it's a lifestyle. I build systems that optimize resources and maximize impact.</p>
+                            <div className="narrative-card-title">Leadership & Excellence</div>
+                            <p className="narrative-card-text">Elected Head Boy by the students. Reached 3rd stage at International Maths Olympiad and National Science Olympiad multiple times. Consistently in the top 5 of my class.</p>
                         </motion.div>
                     </motion.div>
                 </motion.div>
@@ -97,7 +97,7 @@ const Home = () => {
                 <Divider />
             </div>
 
-            {/* Section 3: The Intersection */}
+            {/* Section 3: Three Passions */}
             <section className="narrative-section" style={{ backgroundColor: 'var(--bg-color)', textAlign: 'center' }}>
                 <motion.div
                     className="container"
@@ -106,23 +106,23 @@ const Home = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={fadeInUp}
                 >
-                    <div className="big-stat">3 Domains</div>
-                    <h2 className="narrative-headline">Connecting the Dots.</h2>
+                    <div className="big-stat">3 Passions</div>
+                    <h2 className="narrative-headline">Where My Interests Converge.</h2>
                     <p className="narrative-text">
-                        Real-life solutions don't live in silos. They emerge at the intersection of fields.
+                        I believe the most impactful solutions emerge at the intersection of these fields.
                     </p>
                     <motion.div className="narrative-grid" style={{ maxWidth: '800px', margin: '60px auto 0' }} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
-                            <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Software Engineering</h3>
-                            <p className="narrative-card-text">To know what the market lacks.</p>
+                            <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Computer Science</h3>
+                            <p className="narrative-card-text">The foundation. From algorithms to full-stack systems, this is the craft I've been honing since school.</p>
                         </motion.div>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Artificial Intelligence</h3>
-                            <p className="narrative-card-text">To provide the automated solution.</p>
+                            <p className="narrative-card-text">The enabler. I envision AI integrated into everyday devices—a personal assistant that works for everyone.</p>
                         </motion.div>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
-                            <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Data Systems</h3>
-                            <p className="narrative-card-text">To drive personalization.</p>
+                            <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Business & Entrepreneurship</h3>
+                            <p className="narrative-card-text">The goal. Building a consumer technology company with scale, consistency, and significant contribution to the industry.</p>
                         </motion.div>
                     </motion.div>
                 </motion.div>
@@ -141,11 +141,11 @@ const Home = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={fadeInUp}
                 >
-                    <h2 className="narrative-headline">"The home of innovation."</h2>
+                    <h2 className="narrative-headline">The Intelligent Second Brain.</h2>
                     <p className="narrative-text" style={{ marginBottom: '40px' }}>
-                        Inspired by Steve Jobs, I view technology as a tool to advance humanity. My product vision is simple: automation that works for you, from age 12 to 100.
+                        My vision is to integrate AI into devices with dedicated computational power and storage—capable of accessing and working with all your data, on-device. A true personal assistant that contains everything you've ever learned, read, and experienced. That's the future I'm building toward.
                     </p>
-                    <Link to="/about" className="manifesto-cta" style={{ fontSize: '21px' }}>Read the Full Vision ›</Link>
+                    <Link to="/about" className="manifesto-cta" style={{ fontSize: '21px' }}>Read My Full Story ›</Link>
                 </motion.div>
             </section>
         </div>

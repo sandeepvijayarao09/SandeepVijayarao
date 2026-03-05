@@ -34,7 +34,7 @@ const About = () => {
                 animate="visible"
                 variants={fadeInUp}
             >
-                The Operator/’s Mindset
+                My Journey
             </motion.h1>
 
             <motion.div
