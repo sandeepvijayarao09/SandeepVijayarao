@@ -30,7 +30,7 @@
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 900px;
     text-align: center;
 }
 
@@ -51,9 +51,9 @@
     font-size: clamp(18px, 2vw, 24px);
     /* Fluid typography */
     font-weight: 400;
-    line-height: 1.4;
-    max-width: 640px;
-    color: var(--text-primary);
+    line-height: 1.5;
+    max-width: 720px;
+    color: var(--text-secondary);
     margin: 24px auto 0;
 }
 
@@ -61,7 +61,7 @@
 
 /* Scroll Section Styles */
 .narrative-section {
-    padding: 120px 0;
+    padding: 120px 24px;
 }
 
 .narrative-headline {
@@ -74,9 +74,9 @@
 
 .narrative-text {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 720px;
     margin: 0 auto;
 }
 
@@ -93,6 +93,13 @@
     padding: 40px;
     border-radius: var(--radius-lg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.narrative-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .narrative-card-title {
@@ -140,6 +147,10 @@
 
     .narrative-headline {
         font-size: 32px;
+    }
+
+    .narrative-section {
+        padding: 80px 16px;
     }
 }
 

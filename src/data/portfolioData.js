@@ -118,7 +118,7 @@ export const socialLinks = {
 };
 
 export const now = {
-  focus: "AI Expert, Entrepreneur.",
+  focus: "AI Research & Building the Intelligent Second Brain",
   currentProject: "Neural Studio",
   reading: "Zero to One by Peter Thiel",
   academics: "Master of Computer Science, Northeastern University",

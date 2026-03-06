@@ -7,8 +7,8 @@
   --bg-color: #F5F5F7;
   /* Apple Light Gray Background */
   --bg-card: #FFFFFF;
-  --bg-section-alt: #FFFFFF;
-  /* Alternating sections usually white on gray */
+  --bg-section-alt: #FAFAFA;
+  /* Subtle contrast from bg-color for visual layering */
 
   --text-primary: #1D1D1F;
   /* Apple Near Black */
@@ -20,6 +20,8 @@
   --accent-blue-hover: #004499;
 
   --border-color: #D2D2D7;
+  --divider-color: #D2D2D7;
+  --max-width: 1280px;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -59,6 +61,8 @@
   --accent-blue-hover: #007AFF;
 
   --border-color: #38383A;
+  --divider-color: #38383A;
+  --max-width: 1280px;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);

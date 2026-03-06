@@ -36,7 +36,8 @@ const Home = () => {
                             Work For Everyone.
                         </h1>
                         <p className="hero-statement">
-                            I'm building the future of personal computing — where AI doesn't just assist, it understands. An Intelligent Second Brain for every person on the planet.
+                            AI Researcher. Engineer. Future CEO.<br />
+                            I'm building an Intelligent Second Brain — and the company behind it.
                         </p>
                     </motion.div>
                 </div>
@@ -46,15 +47,15 @@ const Home = () => {
             <section className="status-ticker">
                 <div className="container ticker-content">
                     <div>
-                        <span className="ticker-label">Mission:</span>
-                        Consumer Technology at Scale
+                        <span className="ticker-label">Research:</span>
+                        On-Device AI & Intelligent Systems
                     </div>
                     <div>
-                        <span className="ticker-label">Academics:</span>
-                        M.S. Computer Science — Northeastern University
+                        <span className="ticker-label">Published:</span>
+                        IEEE AISP 2024
                     </div>
                     <div>
-                        <span className="ticker-label">Location:</span>
+                        <span className="ticker-label">Based in:</span>
                         San Francisco
                     </div>
                 </div>
@@ -76,7 +77,7 @@ const Home = () => {
                     <p className="typography-caption" style={{ marginBottom: '16px', textTransform: 'uppercase' }}>The Origin</p>
                     <h2 className="narrative-headline">One Device Changed Everything.</h2>
                     <p className="narrative-text">
-                        In 2012, I held an iPhone 4s for the first time. That single moment rewired how I saw the world. Technology wasn't just a tool — it was a medium for human expression. From that day, I've had one goal: build products at that level.
+                        In 2012, I held an iPhone 4s for the first time. That single moment rewired how I saw the world. Technology wasn't just a tool — it was a medium for human expression. From that day, I've had one purpose: build products at that level, and lead the company that ships them.
                     </p>
                 </motion.div>
             </section>
@@ -96,20 +97,20 @@ const Home = () => {
                 >
                     <h2 className="narrative-headline">The Thesis.</h2>
                     <p className="narrative-text" style={{ marginBottom: '60px' }}>
-                        The next great company won't just build software. It will build intelligence — deeply personal, always available, running on-device.
+                        The next great company won't just build software. It will build intelligence — deeply personal, always available, running on-device. I'm researching the science and engineering the product to make that real.
                     </p>
                     <motion.div className="narrative-grid" style={{ maxWidth: '900px', margin: '0 auto' }} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>On-Device AI</h3>
-                            <p className="narrative-card-text">Intelligence that lives with you, not on a server. Private, fast, always available.</p>
+                            <p className="narrative-card-text">Researching efficient model architectures for private, on-device intelligence — AI that lives with you, not on a server.</p>
                         </motion.div>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Consumer Scale</h3>
-                            <p className="narrative-card-text">Technology for the billion, not the few. Products that work for everyone, everywhere.</p>
+                            <p className="narrative-card-text">Building products that serve billions — not proofs of concept. Technology for every person, everywhere.</p>
                         </motion.div>
                         <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Product Vision</h3>
-                            <p className="narrative-card-text">Where engineering meets intention. Every product I build starts with a question: does this make life better?</p>
+                            <p className="narrative-card-text">The intersection of deep AI research and consumer intuition. Every product starts with one question: does this make life fundamentally better?</p>
                         </motion.div>
                     </motion.div>
                 </motion.div>
@@ -128,9 +129,9 @@ const Home = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={fadeInUp}
                 >
-                    <h2 className="narrative-headline" style={{ fontSize: '56px' }}>"Every person deserves<br />a Second Brain."</h2>
+                    <h2 className="narrative-headline" style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>"Every person deserves<br />a Second Brain."</h2>
                     <p className="narrative-text" style={{ marginBottom: '40px' }}>
-                        An AI that remembers everything you've ever learned, surfaces it when you need it, and works entirely on your device. That's the product. That's the company.
+                        An AI that remembers everything you've ever learned, surfaces it when you need it, and runs entirely on your device. That's the product. That's the company. And I will build it.
                     </p>
                     <Link to="/about" className="manifesto-cta" style={{ fontSize: '21px' }}>The Full Story ›</Link>
                 </motion.div>

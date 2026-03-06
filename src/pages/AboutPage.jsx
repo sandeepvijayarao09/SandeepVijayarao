@@ -33,7 +33,7 @@ const About = () => {
                 animate="visible"
                 variants={fadeInUp}
             >
-                The Journey
+                Vision & Mission
             </motion.h1>
 
             <motion.div
@@ -45,27 +45,27 @@ const About = () => {
                 {/* 1. Visionary Narrative */}
                 <motion.div className="about-block" variants={sectionVariant}>
                     <p className="about-intro" style={{ fontSize: '28px', lineHeight: '1.5', textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px', fontWeight: '600' }}>
-                        "I believe every person on this planet deserves technology that thinks with them, not for them."
+                        "The companies that will define the next century are the ones building intelligence — not as a feature, but as a foundation."
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        It started with a single device. In 2012, I used an iPhone 4s for the first time — and from that moment, everything changed. I wasn't just fascinated by technology; I was consumed by the question of what it could become. The elegance of Apple's vision — a product so intuitive it disappears — became my north star.
+                        My research sits at the intersection of artificial intelligence and consumer technology. I study on-device AI architectures, intelligent knowledge systems, and the computational frameworks needed to make personal AI a reality — not in the cloud, but in the palm of your hand. My work has been published at <strong>IEEE AISP 2024</strong>, and I hold deep expertise across the modern AI stack: from transformer architectures and RAG pipelines to real-time pose estimation and multimodal systems.
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        That obsession drove every decision since. I taught myself to code during school vacations. I competed in international olympiads. I led as Head Boy. But these weren't checklist items — they were expressions of a deeper conviction: that technology, when built with intention, transforms lives.
+                        But research without product is incomplete. Every system I've built — from Neural Studio, a multimodal AI productivity suite powered by Gemini, to a Low-Code platform generating applications from natural language — was designed to ship. Not to demonstrate. Not to prototype. To ship to real users, solving real problems. That's the difference between a researcher and a builder. I am both.
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        Through my undergraduate in Computer Science, I didn't just study — I built. A Hospital Management System for a real hospital. A Low-Code platform that evolved into an AI-powered development tool. Each project sharpened the same question: how do we make technology truly personal?
+                        This conviction didn't start in a lab. It started in 2012, holding an iPhone 4s, understanding for the first time that a product could be a medium for human expression. That moment set the trajectory: I taught myself to code, earned recognition in international olympiads, led as Head Boy, and pursued Computer Science at RMK Engineering College — not as steps on a resume, but as training for the company I intend to build.
                     </p>
 
                     <p className="about-text" style={{ marginBottom: '20px' }}>
-                        That question became my thesis. Internships at companies like Infosys and Trominosoft taught me how the industry operates. Research published at IEEE taught me where the frontier lies. Active participation in global technical communities showed me the scale of what's possible.
+                        At <strong>Northeastern University</strong> in San Francisco, I'm sharpening the blade. Studying at the Khoury College of Computer Sciences, surrounded by the world's most ambitious technologists, in the city where the future is built. Every class, every research project, every line of code serves a singular mission.
                     </p>
 
                     <p className="about-text">
-                        Now, at Northeastern University in San Francisco, I'm building toward the answer: the <strong>Intelligent Second Brain</strong> — an AI that lives on your device, remembers everything you've learned, and surfaces knowledge exactly when you need it. Not a chatbot. Not an assistant. A second mind. This is the product. This is the company. This is my life's work.
+                        That mission is the <strong>Intelligent Second Brain</strong> — an AI that lives on your device, contains everything you've ever learned, and surfaces knowledge exactly when you need it. Not a chatbot. Not an assistant. A second mind. I will build this product. I will build the company behind it. And I will lead it to become one of the most important technology companies of our generation.
                     </p>
                 </motion.div>
 
@@ -91,6 +91,7 @@ const About = () => {
                         <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Start with the human:</strong> "Technology exists to serve people, not the other way around."</li>
                         <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Ship, don't theorize:</strong> "Ideas are worthless until they're in someone's hands."</li>
                         <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Think in decades:</strong> "Build for where the world is going, not where it is."</li>
+                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Lead from the front:</strong> "The CEO must be the best product thinker in the room."</li>
                     </ul>
                 </motion.div>
 
