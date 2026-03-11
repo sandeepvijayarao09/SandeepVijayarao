@@ -17,7 +17,7 @@ const Experience = () => {
             </div>
 
             {/* GitHub Activity */}
-            <GitHubActivity username="sandeepvijayarao" />
+            <GitHubActivity username="sandeepvijayarao09" />
         </div>
     );
 };

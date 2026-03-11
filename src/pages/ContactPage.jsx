@@ -53,7 +53,7 @@ const Contact = () => {
                 <a href="mailto:sandeepvijayarao07@gmail.com" className="typography-body" style={{ color: 'var(--accent-blue)' }}>sandeepvijayarao07@gmail.com</a>
                 <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginTop: '10px' }}>
                     <a href="https://calendar.app.google/AL3bEPnaT7X5bPkP9" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>Book a Meeting ›</a>
-                    <a href="https://github.com/sandeepvijayarao" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>GitHub Profile ›</a>
+                    <a href="https://github.com/sandeepvijayarao09" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>GitHub Profile ›</a>
                     <a href="https://www.linkedin.com/in/sandeepvijayarao/" target="_blank" rel="noopener noreferrer" className="typography-body" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--accent-blue)' }}>LinkedIn ›</a>
                 </div>
             </div>

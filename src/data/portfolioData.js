@@ -4,7 +4,7 @@ export const projects = [
     title: "Neural Studio - Multimodal AI Productivity Suite",
     description: "Engineered a dual-mode AI application using Gemini 3.0 Pro for complex reasoning in Research Mode and Gemini 3.0 Flash for high-speed generation in Creator Mode. Architected a RAG-based Research Lifecycle suite on a canvas interface using vector embeddings to automate Lit Reviews and synchronized multi-user team brainstorming.",
     image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Neural+Studio",
-    link: "#",
+    link: "https://github.com/sandeepvijayarao09/Gemini-Devpost-Hackathon-Feb09",
     category: "ai",
     techStack: ["Gemini 3.0 Pro", "Gemini 3.0 Flash", "RAG", "Vector Embeddings"]
   },
@@ -13,7 +13,7 @@ export const projects = [
     title: "SkillGap AI: AI-Powered LMS & Career Development",
     description: "Developed a full-stack Learning Management System (LMS) platform using React and ChatGPT API to automate skill gap analysis and resume evaluation. Integrated mentorship & workshop modules with end-to-end booking and payment.",
     image: "https://placehold.co/600x400/0066cc/ffffff?text=SkillGap+AI",
-    link: "#",
+    link: "https://github.com/sandeepvijayarao09/Hospital-Management-System-Updated",
     category: "engineering",
     techStack: ["React", "ChatGPT API", "LMS", "Payment Integration"]
   },
@@ -22,7 +22,7 @@ export const projects = [
     title: "Low-Code / No-Code App Development Platform",
     description: "Engineered a web-based IDE leveraging OpenAI GPT and Codex APIs to translate natural language prompts into deployable applications. Architected a high-fidelity prompt-to-code pipeline that streamlined the end-to-end application creation.",
     image: "https://placehold.co/600x400/333333/ffffff?text=No-Code+Platform",
-    link: "#",
+    link: "https://github.com/sandeepvijayarao09/agentic-research-assistant",
     category: "engineering",
     techStack: ["OpenAI GPT", "Codex API", "Web IDE"]
   },
@@ -31,7 +31,7 @@ export const projects = [
     title: "Speech & Emotion Analysis using NLP & CNN",
     description: "Developed an NLP-CNN pipeline achieving 95% transcription accuracy and a 20% improvement in emotion detection for e-commerce datasets. Designed a real-time visualization system to map emotional trajectories.",
     image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Speech+%26+Emotion",
-    link: "#",
+    link: "https://github.com/sandeepvijayarao09/realtime-pose-estimation",
     category: "ai",
     techStack: ["NLP", "CNN", "Data Visualization"]
   }
@@ -112,7 +112,7 @@ export const press = [];
 
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/sandeepvijayarao",
-  github: "https://github.com/sandeepvijayarao",
+  github: "https://github.com/sandeepvijayarao09",
   email: "mailto:sandeepvijayarao07@gmail.com",
   phone: "tel:+14082106329"
 };
