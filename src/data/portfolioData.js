@@ -1,39 +1,111 @@
 export const projects = [
   {
     id: 1,
-    title: "Neural Studio - Multimodal AI Productivity Suite",
-    description: "Engineered a dual-mode AI application using Gemini 3.0 Pro for complex reasoning in Research Mode and Gemini 3.0 Flash for high-speed generation in Creator Mode. Architected a RAG-based Research Lifecycle suite on a canvas interface using vector embeddings to automate Lit Reviews and synchronized multi-user team brainstorming.",
-    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Neural+Studio",
-    link: "https://github.com/sandeepvijayarao09/Gemini-Devpost-Hackathon-Feb09",
+    title: "AI for Organisation (Enterprise LLM Infrastructure)",
+    description: "Architected a role-based access control system, organization-specific fine-tuning pipeline, and management analytics dashboard. Designed a structured intermediate AI layer between employees and LLMs to ensure data privacy and organizational context.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Enterprise+LLMs",
+    link: "#",
     category: "ai",
-    techStack: ["Gemini 3.0 Pro", "Gemini 3.0 Flash", "RAG", "Vector Embeddings"]
+    techStack: ["LLMs", "Fine-Tuning", "RBAC", "Data Privacy"]
   },
   {
     id: 2,
-    title: "SkillGap AI: AI-Powered LMS & Career Development",
-    description: "Developed a full-stack Learning Management System (LMS) platform using React and ChatGPT API to automate skill gap analysis and resume evaluation. Integrated mentorship & workshop modules with end-to-end booking and payment.",
+    title: "AI-Powered Learning & Career Platform (SkillGap AI)",
+    description: "Full-stack LMS built with React, Node.js, and GPT API. Automates skill gap analysis and resume evaluation to generate personalized career roadmaps. Also includes mentorship and workshop management modules.",
     image: "https://placehold.co/600x400/0066cc/ffffff?text=SkillGap+AI",
-    link: "https://github.com/sandeepvijayarao09/Hospital-Management-System-Updated",
+    link: "#",
     category: "engineering",
-    techStack: ["React", "ChatGPT API", "LMS", "Payment Integration"]
+    techStack: ["React", "Node.js", "GPT API", "LMS"]
   },
   {
     id: 3,
     title: "Low-Code / No-Code App Development Platform",
-    description: "Engineered a web-based IDE leveraging OpenAI GPT and Codex APIs to translate natural language prompts into deployable applications. Architected a high-fidelity prompt-to-code pipeline that streamlined the end-to-end application creation.",
+    description: "Web-based IDE that transforms natural language prompts into deployable applications using OpenAI GPT and Codex APIs.",
     image: "https://placehold.co/600x400/333333/ffffff?text=No-Code+Platform",
-    link: "https://github.com/sandeepvijayarao09/agentic-research-assistant",
+    link: "#",
     category: "engineering",
     techStack: ["OpenAI GPT", "Codex API", "Web IDE"]
   },
   {
     id: 4,
-    title: "Speech & Emotion Analysis using NLP & CNN",
-    description: "Developed an NLP-CNN pipeline achieving 95% transcription accuracy and a 20% improvement in emotion detection for e-commerce datasets. Designed a real-time visualization system to map emotional trajectories.",
-    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Speech+%26+Emotion",
+    title: "Agentic Research Assistant (Multi-Agent Pipeline)",
+    description: "Multi-agent system (built with Google ADK) with persistent long-term memory, state management, and tool use for multi-turn, long-horizon task completion.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Agentic+Research",
+    link: "https://github.com/sandeepvijayarao09/agentic-research-assistant",
+    category: "ai",
+    techStack: ["Google ADK", "Multi-Agent System", "State Management"]
+  },
+  {
+    id: 5,
+    title: "Distributed Transformer Training Benchmark",
+    description: "Implemented distributed training experiments for transformer models using PyTorch DDP across multi-GPU workloads. Evaluated scaling efficiency, communication overhead, and GPU utilization.",
+    image: "https://placehold.co/600x400/333333/ffffff?text=Distributed+Training",
+    link: "#",
+    category: "engineering",
+    techStack: ["PyTorch DDP", "Transformers", "Multi-GPU", "Distributed Training"]
+  },
+  {
+    id: 6,
+    title: "Hospital Management System",
+    description: "Full-stack web application streamlining patient records, appointments, and billing operations.",
+    image: "https://placehold.co/600x400/0066cc/ffffff?text=Hospital+System",
+    link: "https://github.com/sandeepvijayarao09/Hospital-Management-System-Updated",
+    category: "engineering",
+    techStack: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"]
+  },
+  {
+    id: 7,
+    title: "LLM Evaluation & Fine-Tuning Framework",
+    description: "Evaluation harness benchmarking instruction-following, factual accuracy, and hallucination rates across open-source LLMs (LLaMA, Mistral). Fine-tuned models using DPO and RLHF-inspired pipelines, and designed RAG pipelines evaluated with MRR/NDCG metrics.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=LLM+Evaluation",
+    link: "https://github.com/sandeepvijayarao09/llm-eval-finetuning",
+    category: "ai",
+    techStack: ["LLaMA", "Mistral", "DPO", "RLHF", "RAG"]
+  },
+  {
+    id: 8,
+    title: "Neural Studio (Multimodal AI Productivity Suite)",
+    description: "Dual-mode multimodal AI system (Gemini Pro + Flash) with a RAG-based research suite for automated literature search, synchronized multi-user brainstorming, and content creation workflows.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Neural+Studio",
+    link: "https://github.com/sandeepvijayarao09/Gemini-Devpost-Hackathon-Feb09",
+    category: "ai",
+    techStack: ["Gemini Pro", "Gemini Flash", "RAG", "Vector Embeddings"]
+  },
+  {
+    id: 9,
+    title: "Real-Time Human Pose Estimation System",
+    description: "System utilizing MediaPipe, OpenCV, TensorFlow, CNN/RNN, and Django for real-time tracking at 30 FPS. Published findings at IEEE AISP 2024.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Pose+Estimation",
     link: "https://github.com/sandeepvijayarao09/realtime-pose-estimation",
     category: "ai",
+    techStack: ["MediaPipe", "OpenCV", "TensorFlow", "CNN", "RNN", "Django"]
+  },
+  {
+    id: 10,
+    title: "Real-Time Lane Detection for Autonomous Driving",
+    description: "Optimized deep learning pipeline using PyTorch, OpenCV, and CNN segmentation techniques for robust real-time lane detection across varied environmental conditions.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Lane+Detection",
+    link: "https://github.com/sandeepvijayarao09/realtime-lane-detection",
+    category: "ai",
+    techStack: ["PyTorch", "OpenCV", "CNN Segmentation"]
+  },
+  {
+    id: 11,
+    title: "Speech & Emotion Analysis using NLP & CNN",
+    description: "NLP-CNN pipeline for e-commerce product reviews achieving high transcription accuracy and improved emotion detection from vocal audio. Designed a real-time visualization system to map emotional trajectories.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Speech+%26+Emotion",
+    link: "#",
+    category: "ai",
     techStack: ["NLP", "CNN", "Data Visualization"]
+  },
+  {
+    id: 12,
+    title: "Vision-Language Grounding with CLIP & Diffusion Models",
+    description: "Experimental pipeline integrating CLIP-based zero-shot image-text grounding and prompt-conditioned image generation (Stable Diffusion). Includes visualization of cross-modal attention maps and embedding spaces.",
+    image: "https://placehold.co/600x400/1d1d1f/ffffff?text=Vision-Language",
+    link: "https://github.com/sandeepvijayarao09/vision-language-grounding",
+    category: "ai",
+    techStack: ["CLIP", "Stable Diffusion", "Vision-Language Models"]
   }
 ];
 

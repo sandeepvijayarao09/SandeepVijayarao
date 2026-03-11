@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import InfoCard from '../components/sections/InfoCard';
 import Divider from '../components/common/Divider';
 import { projects } from '../data/portfolioData';
+import { motion } from 'framer-motion';
 import './ProjectsPage.css';
 
 const Projects = () => {
@@ -10,6 +11,19 @@ const Projects = () => {
     const filteredProjects = filter === 'all'
         ? projects
         : projects.filter(p => p.category === filter);
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.1 }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+    };
 
     return (
         <div className="container">
@@ -37,18 +51,25 @@ const Projects = () => {
                 </button>
             </div>
 
-            <div className="projects-grid">
+            <motion.div 
+                className="projects-grid"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                key={filter} // Re-animate when filter changes
+            >
                 {filteredProjects.map((project) => (
-                    <InfoCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        image={project.image}
-                        link={project.link}
-                        onClick={() => window.location.href = project.link}
-                    />
+                    <motion.div key={project.id} variants={itemVariants} className="project-card-wrapper">
+                        <InfoCard
+                            title={project.title}
+                            description={project.description}
+                            image={project.image}
+                            link={project.link}
+                            onClick={() => window.open(project.link, '_blank')} // Changed to open in new tab
+                        />
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
 
             {/* AI Model Zoo (Only shows when AI is selected or All) */}
             {(filter === 'ai' || filter === 'all') && (

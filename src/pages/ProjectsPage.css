@@ -5,6 +5,10 @@
     padding-bottom: var(--spacing-xxl);
 }
 
+.project-card-wrapper {
+    height: 100%;
+}
+
 @media (max-width: 480px) {
     .projects-grid {
         grid-template-columns: 1fr;
