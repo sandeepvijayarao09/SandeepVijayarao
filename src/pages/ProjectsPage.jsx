@@ -71,23 +71,7 @@ const Projects = () => {
                 ))}
             </motion.div>
 
-            {/* AI Model Zoo (Only shows when AI is selected or All) */}
-            {(filter === 'ai' || filter === 'all') && (
-                <div style={{ marginTop: '80px' }}>
-                    <Divider style={{ marginBottom: '60px' }} />
-                    <h2 className="typography-headline" style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>AI Model Playground</h2>
-                    <div className="model-zoo-container">
-                        <iframe
-                            src="https://hf.co/chat/r/aaaaaa" /* Placeholder HF Space */
-                            title="Hugging Face Space"
-                            style={{ width: '100%', height: '500px', border: 'none', background: 'var(--bg-card)' }}
-                        ></iframe>
-                        <p className="typography-caption" style={{ textAlign: 'center', marginTop: '10px', color: 'var(--text-secondary)' }}>
-                            Interactive demo hosted on Hugging Face Spaces.
-                        </p>
-                    </div>
-                </div>
-            )}
+
         </div>
     );
 };
