@@ -1,24 +1,10 @@
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .manifesto-hero {
-    min-height: 90vh;
+    min-height: calc(100vh - var(--header-height));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-xxl) var(--spacing-lg);
-    opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
+    padding: var(--spacing-xxl) 0;
 }
 
 .hero-container {
@@ -61,7 +47,7 @@
 
 /* Scroll Section Styles */
 .narrative-section {
-    padding: 120px 24px;
+    padding: 120px 0;
 }
 
 .narrative-headline {
@@ -82,10 +68,23 @@
 
 .narrative-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
     margin-top: 80px;
     text-align: left;
+}
+
+.narrative-grid .narrative-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .narrative-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .narrative-card {
@@ -94,12 +93,14 @@
     border-radius: var(--radius-lg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
     border: 1px solid var(--border-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-spring, 0.5s cubic-bezier(0.22, 1, 0.36, 1)),
+                box-shadow var(--transition-smooth, 0.4s cubic-bezier(0.25, 0.1, 0.25, 1));
+    will-change: transform, box-shadow;
 }
 
 .narrative-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
 }
 
 .narrative-card-title {
@@ -150,7 +151,7 @@
     }
 
     .narrative-section {
-        padding: 80px 16px;
+        padding: 80px 0;
     }
 }
 

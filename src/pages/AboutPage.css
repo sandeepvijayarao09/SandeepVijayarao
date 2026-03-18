@@ -24,15 +24,15 @@
     /* 24px */
     padding: 32px;
     box-shadow: var(--shadow-sm);
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s ease;
+    transition: box-shadow var(--transition-smooth, 0.4s cubic-bezier(0.25, 0.1, 0.25, 1));
     border: 1px solid rgba(0, 0, 0, 0.04);
+    will-change: transform, box-shadow;
 }
 
 .value-card:hover,
 .inspiration-card:hover,
 .narrative-card:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
 }
 
 .about-intro {

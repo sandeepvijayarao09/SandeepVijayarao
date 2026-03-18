@@ -1,8 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const TimelineItem = ({ exp }) => {
     return (
-        <div className="timeline-item">
+        <motion.div
+            className="timeline-item"
+            whileHover={{ x: 4 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        >
             <div className="timeline-marker"></div>
             <div className="timeline-content">
                 <span className="timeline-date">{exp.dates}</span>
@@ -13,11 +18,18 @@ const TimelineItem = ({ exp }) => {
                 {/* Interactive Tech Stack */}
                 <div className="tech-stack-container">
                     {exp.techStack && exp.techStack.map((tech, index) => (
-                        <span key={index} className="tech-pill">{tech}</span>
+                        <motion.span
+                            key={index}
+                            className="tech-pill"
+                            whileHover={{ scale: 1.08, y: -2 }}
+                            transition={{ type: 'spring', stiffness: 400, damping: 15 }}
+                        >
+                            {tech}
+                        </motion.span>
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

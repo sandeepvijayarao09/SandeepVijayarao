@@ -5,25 +5,42 @@ import ValueCard from '../components/common/ValueCard';
 import InspirationCard from '../components/common/InspirationCard';
 import './AboutPage.css';
 
+const appleSpring = [0.22, 1, 0.36, 1];
+const appleEase = [0.25, 0.1, 0.25, 1.0];
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 50, scale: 0.97, filter: 'blur(6px)' },
+    visible: {
+        opacity: 1, y: 0, scale: 1, filter: 'blur(0px)',
+        transition: { duration: 0.7, ease: appleSpring }
+    }
+};
+
+const sectionVariant = {
+    hidden: { opacity: 0, y: 40, filter: 'blur(4px)' },
+    visible: {
+        opacity: 1, y: 0, filter: 'blur(0px)',
+        transition: { duration: 0.6, ease: appleEase }
+    }
+};
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { staggerChildren: 0.12, delayChildren: 0.1 }
+    }
+};
+
+const cardVariant = {
+    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    visible: {
+        opacity: 1, y: 0, scale: 1,
+        transition: { duration: 0.5, ease: appleSpring }
+    }
+};
+
 const About = () => {
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-    };
-
-    const sectionVariant = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
-    };
-
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.1 }
-        }
-    };
-
     return (
         <div className="container" style={{ paddingBottom: '100px' }}>
             <motion.h1
@@ -71,56 +88,100 @@ const About = () => {
 
                 {/* 2. Core Values */}
                 <Divider style={{ margin: '60px 0' }} />
-                <motion.div className="about-block" variants={sectionVariant}>
+                <motion.div
+                    className="about-block"
+                    variants={sectionVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-80px" }}
+                >
                     <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Foundation</p>
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Core Values</h2>
-                    <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
-                        <ValueCard title="Integrity" description="&quot;Build things that are honest. No shortcuts, no illusions.&quot;" />
-                        <ValueCard title="Conviction" description="&quot;Have the courage to pursue what you believe in, even when others don't see it yet.&quot;" />
-                        <ValueCard title="Craft" description="&quot;Every detail matters. The product is the strategy.&quot;" />
-                        <ValueCard title="Focus" description="&quot;Say no to a thousand things to say yes to the one that matters.&quot;" />
-                    </div>
+                    <motion.div
+                        className="about-grid"
+                        style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <motion.div variants={cardVariant}><ValueCard title="Integrity" description="&quot;Build things that are honest. No shortcuts, no illusions.&quot;" /></motion.div>
+                        <motion.div variants={cardVariant}><ValueCard title="Conviction" description="&quot;Have the courage to pursue what you believe in, even when others don't see it yet.&quot;" /></motion.div>
+                        <motion.div variants={cardVariant}><ValueCard title="Craft" description="&quot;Every detail matters. The product is the strategy.&quot;" /></motion.div>
+                        <motion.div variants={cardVariant}><ValueCard title="Focus" description="&quot;Say no to a thousand things to say yes to the one that matters.&quot;" /></motion.div>
+                    </motion.div>
                 </motion.div>
 
                 {/* 3. Guiding Principles */}
                 <Divider style={{ margin: '60px 0' }} />
-                <motion.div className="about-block" variants={sectionVariant}>
+                <motion.div
+                    className="about-block"
+                    variants={sectionVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-80px" }}
+                >
                     <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Philosophy</p>
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>How I Think</h2>
-                    <ul style={{ listStyle: 'none', padding: 0 }}>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Start with the human:</strong> "Technology exists to serve people, not the other way around."</li>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Ship, don't theorize:</strong> "Ideas are worthless until they're in someone's hands."</li>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Think in decades:</strong> "Build for where the world is going, not where it is."</li>
-                        <li style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Lead from the front:</strong> "The CEO must be the best product thinker in the room."</li>
-                    </ul>
+                    <motion.ul style={{ listStyle: 'none', padding: 0 }} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                        <motion.li variants={cardVariant} style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Start with the human:</strong> "Technology exists to serve people, not the other way around."</motion.li>
+                        <motion.li variants={cardVariant} style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Ship, don't theorize:</strong> "Ideas are worthless until they're in someone's hands."</motion.li>
+                        <motion.li variants={cardVariant} style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Think in decades:</strong> "Build for where the world is going, not where it is."</motion.li>
+                        <motion.li variants={cardVariant} style={{ marginBottom: '20px', fontSize: '18px' }}><strong style={{ color: 'var(--accent-blue)' }}>Lead from the front:</strong> "The CEO must be the best product thinker in the room."</motion.li>
+                    </motion.ul>
                 </motion.div>
 
                 {/* 4. Inspirations */}
                 <Divider style={{ margin: '60px 0' }} />
-                <motion.div className="about-block" variants={sectionVariant}>
+                <motion.div
+                    className="about-block"
+                    variants={sectionVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-80px" }}
+                >
                     <p className="typography-caption" style={{ textTransform: 'uppercase', marginBottom: '20px' }}>The Fuel</p>
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Inspirations</h2>
-                    <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '30px' }}>
-                        <InspirationCard name="Steve Jobs" description="The intersection of technology and liberal arts." />
-                        <InspirationCard name="Virat Kohli" description="Relentless pursuit of excellence under pressure." />
-                        <InspirationCard name="Pawan Kalyan" description="Servant leadership and principled conviction." />
-                    </div>
+                    <motion.div
+                        className="about-grid"
+                        style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '30px' }}
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <motion.div variants={cardVariant}><InspirationCard name="Steve Jobs" description="The intersection of technology and liberal arts." /></motion.div>
+                        <motion.div variants={cardVariant}><InspirationCard name="Virat Kohli" description="Relentless pursuit of excellence under pressure." /></motion.div>
+                        <motion.div variants={cardVariant}><InspirationCard name="Pawan Kalyan" description="Servant leadership and principled conviction." /></motion.div>
+                    </motion.div>
                 </motion.div>
 
                 {/* 5. Discipline */}
                 <Divider style={{ margin: '60px 0' }} />
-                <motion.div className="about-block" variants={sectionVariant}>
+                <motion.div
+                    className="about-block"
+                    variants={sectionVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-80px" }}
+                >
                     <h2 className="typography-headline" style={{ marginBottom: '30px' }}>Discipline</h2>
-                    <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
+                    <motion.div
+                        style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <motion.div style={{ flex: 1 }} variants={cardVariant}>
                             <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Physical</h3>
                             <p style={{ color: 'var(--text-secondary)' }}>Peak performance demands peak health. No compromises.</p>
-                        </div>
-                        <div style={{ flex: 1 }}>
+                        </motion.div>
+                        <motion.div style={{ flex: 1 }} variants={cardVariant}>
                             <h3 style={{ fontSize: '22px', marginBottom: '10px' }}>Mental</h3>
                             <p style={{ color: 'var(--text-secondary)' }}>Clarity of thought. Deep focus. Long-term thinking over short-term noise.</p>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </motion.div>
 
             </motion.div>

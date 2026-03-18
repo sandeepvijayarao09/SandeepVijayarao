@@ -2,24 +2,69 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Divider from '../components/common/Divider';
-import './AboutPage.css';
+import './HomePage.css';
+
+// Apple-grade easing
+const appleEase = [0.25, 0.1, 0.25, 1.0];
+const appleSpring = [0.22, 1, 0.36, 1];
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 60, scale: 0.97, filter: 'blur(8px)' },
+    visible: {
+        opacity: 1, y: 0, scale: 1, filter: 'blur(0px)',
+        transition: { duration: 0.8, ease: appleSpring }
+    }
+};
+
+const fadeInUpLight = {
+    hidden: { opacity: 0, y: 40, filter: 'blur(4px)' },
+    visible: {
+        opacity: 1, y: 0, filter: 'blur(0px)',
+        transition: { duration: 0.7, ease: appleEase }
+    }
+};
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { staggerChildren: 0.15, delayChildren: 0.1 }
+    }
+};
+
+const heroStagger = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: { staggerChildren: 0.2, delayChildren: 0.15 }
+    }
+};
+
+const heroChild = {
+    hidden: { opacity: 0, y: 50, filter: 'blur(12px)' },
+    visible: {
+        opacity: 1, y: 0, filter: 'blur(0px)',
+        transition: { duration: 1.0, ease: appleSpring }
+    }
+};
+
+const tickerItem = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1, y: 0,
+        transition: { duration: 0.5, ease: appleEase }
+    }
+};
+
+const cardReveal = {
+    hidden: { opacity: 0, y: 50, scale: 0.95 },
+    visible: {
+        opacity: 1, y: 0, scale: 1,
+        transition: { duration: 0.6, ease: appleSpring }
+    }
+};
 
 const Home = () => {
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 60 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-    };
-
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
-    };
-
     return (
         <div className="home-page">
             {/* Hero Section */}
@@ -29,37 +74,43 @@ const Home = () => {
                         className="hero-content"
                         initial="hidden"
                         animate="visible"
-                        variants={fadeInUp}
+                        variants={heroStagger}
                     >
-                        <h1 className="hero-traits">
+                        <motion.h1 className="hero-traits" variants={heroChild}>
                             Technology Should<br />
                             Work For Everyone.
-                        </h1>
-                        <p className="hero-statement">
+                        </motion.h1>
+                        <motion.p className="hero-statement" variants={heroChild}>
                             AI Researcher. Engineer. Future CEO.<br />
                             I'm building an Intelligent Second Brain — and the company behind it.
-                        </p>
+                        </motion.p>
                     </motion.div>
                 </div>
             </section>
 
             {/* Status Ticker */}
-            <section className="status-ticker">
+            <motion.section
+                className="status-ticker"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={staggerContainer}
+            >
                 <div className="container ticker-content">
-                    <div>
+                    <motion.div variants={tickerItem}>
                         <span className="ticker-label">Research:</span>
                         On-Device AI & Intelligent Systems
-                    </div>
-                    <div>
+                    </motion.div>
+                    <motion.div variants={tickerItem}>
                         <span className="ticker-label">Published:</span>
                         IEEE AISP 2024
-                    </div>
-                    <div>
+                    </motion.div>
+                    <motion.div variants={tickerItem}>
                         <span className="ticker-label">Based in:</span>
                         San Francisco
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
+            </motion.section>
 
             <div className="container">
                 <Divider />
@@ -93,22 +144,29 @@ const Home = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-100px" }}
-                    variants={fadeInUp}
+                    variants={fadeInUpLight}
                 >
                     <h2 className="narrative-headline">The Thesis.</h2>
                     <p className="narrative-text" style={{ marginBottom: '60px' }}>
                         The next great company won't just build software. It will build intelligence — deeply personal, always available, running on-device. I'm researching the science and engineering the product to make that real.
                     </p>
-                    <motion.div className="narrative-grid" style={{ maxWidth: '900px', margin: '0 auto' }} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                        <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
+                    <motion.div
+                        className="narrative-grid"
+                        style={{ margin: '0 auto' }}
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <motion.div className="narrative-card" variants={cardReveal}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>On-Device AI</h3>
                             <p className="narrative-card-text">Researching efficient model architectures for private, on-device intelligence — AI that lives with you, not on a server.</p>
                         </motion.div>
-                        <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
+                        <motion.div className="narrative-card" variants={cardReveal}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Consumer Scale</h3>
                             <p className="narrative-card-text">Building products that serve billions — not proofs of concept. Technology for every person, everywhere.</p>
                         </motion.div>
-                        <motion.div className="narrative-card" style={{ textAlign: 'center' }} variants={fadeInUp}>
+                        <motion.div className="narrative-card" variants={cardReveal}>
                             <h3 className="narrative-card-title" style={{ color: 'var(--accent-blue)' }}>Product Vision</h3>
                             <p className="narrative-card-text">The intersection of deep AI research and consumer intuition. Every product starts with one question: does this make life fundamentally better?</p>
                         </motion.div>

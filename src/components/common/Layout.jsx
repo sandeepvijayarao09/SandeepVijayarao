@@ -8,13 +8,13 @@ const Layout = ({ children }) => {
 
     // Scroll to top on route change
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [pathname]);
 
     return (
         <>
             <Header />
-            <main style={{ paddingTop: 'var(--header-height)' }}>
+            <main style={{ minHeight: 'calc(100vh - var(--header-height))', display: 'flex', flexDirection: 'column' }}>
                 {children}
             </main>
             <Footer />
